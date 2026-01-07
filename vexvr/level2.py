@@ -1,0 +1,52 @@
+distanceMM = 0
+
+def getCubeDistance1_number(getCubeDistance1_number__number):
+    global myVariable, distanceMM
+    distanceMM = getCubeDistance1_number__number * 250
+
+def cubicMove1_forward(cubicMove1_forward__forward):
+    global myVariable, distanceMM
+    if cubicMove1_forward__forward:
+        drivetrain.drive_for(FORWARD, distanceMM, MM)
+    else:
+        drivetrain.drive_for(REVERSE, distanceMM, MM)
+
+def when_started1():
+    global distanceMM
+    pen.set_pen_color_rgb(0, 255, 0, 100)
+    pen.move(DOWN)
+    getCubeDistance1_number(1)
+    for repeat_count in range(3):
+        cubicMove1_forward(True)
+        drivetrain.turn_for(LEFT, 90, DEGREES)
+        cubicMove1_forward(True)
+        drivetrain.turn_for(RIGHT, 90, DEGREES)
+    cubicMove1_forward(True)
+    drivetrain.turn_for(RIGHT, 90, DEGREES)
+    getCubeDistance1_number(3)
+    cubicMove1_forward(True)
+    drivetrain.turn_for(LEFT, 90, DEGREES)
+    getCubeDistance1_number(1)
+    cubicMove1_forward(True)
+    drivetrain.turn_for(RIGHT, 90, DEGREES)
+    getCubeDistance1_number(2)
+    cubicMove1_forward(True)
+    drivetrain.turn_for(RIGHT, 90, DEGREES)
+    getCubeDistance1_number(3)
+    cubicMove1_forward(True)
+    drivetrain.turn_for(LEFT, 90, DEGREES)
+    getCubeDistance1_number(1)
+    cubicMove1_forward(True)
+    drivetrain.turn_for(LEFT, 90, DEGREES)
+    getCubeDistance1_number(4)
+    cubicMove1_forward(True)
+    drivetrain.turn_for(LEFT, 90, DEGREES)
+    getCubeDistance1_number(1)
+    cubicMove1_forward(True)
+    drivetrain.turn_for(RIGHT, 90, DEGREES)
+    cubicMove1_forward(True)
+    drivetrain.turn_for(LEFT, 90, DEGREES)
+    getCubeDistance1_number(3)
+    cubicMove1_forward(True)
+
+vr_thread(when_started1)
