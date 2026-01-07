@@ -11,5 +11,6 @@ In this folder consists of old source files of my Roblox scripts (that are embar
 they are extremely unoptimized and disorderly).
 
 I assume some of these scripts don't work annymore because the game patched them or
-they include deprecated stuff that Roblox or the games no longer use.
+they include deprecated stuff that Roblox or the games no longer use or
+these scripts are extremely outdated towards the game now.
 ```
