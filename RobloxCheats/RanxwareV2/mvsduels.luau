@@ -1,3 +1,5 @@
+--TODO: update with whitelist lib
+
 -- Ranxware V2: REVIVED | MVSD
 -- (rewrite cuz the old one sucks)
 
