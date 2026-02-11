@@ -1,4 +1,4 @@
-# Noah's Code Archives
+# Code Archives
 This repository contains archives of programs, software, and code that I've worked on throughout the years of programming.
 
 Sources originate from former school assignments (mostly from middle school)
